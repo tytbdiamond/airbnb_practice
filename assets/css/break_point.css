@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* PC > 1024px */
+@media (min-width : 1024px) {
+
+}
+/* Tablet from 740px to 1023px */
+@media (min-width : 740px) and (max-width: 1023px) {
+
+}
+/* Mobile < 740px */
+@media (max-width : 739px) {
+    
+}

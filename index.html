@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb : Vacation Rentals, Cabins, Beach Houses</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/break_point.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="section__container">
+                <div class="header__nav">
+                    <a href="#" class="header__nav__logo">
+                        <img class="header__nav__logo_img" src="./assets/img/Logo.jpg" alt="Airbnb Logo">
+                    </a>
+                    <div class="header__nav__text">
+                        <label for="radio_input2" class="nav__text">Places to stay</label>
+                        <label for="radio_input1" class="nav__text">Experiences</label>
+                        <a href="" class="nav__text">Online Experiences</a>
+                    </div>
+                    <div class="header__nav__user">
+                        <a href="#" class="nav__host">Become a host</a>
+                        <div class="nav__language">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <label for="membership" class="nav__membership">
+                            <input type="checkbox" name="" id="membership" class="membership__option-open" style="display: none;" >
+                            <div class="nav__membership__option">
+                                <div class="membership__option-signinout">
+                                    <span class="membership__option-text" style="font-weight: 600;" >Sign up</span>
+                                    <span class="membership__option-text">Log in</span>
+                                </div>
+                                <div class="membership__option-more">
+                                    <span class="membership__option-text">Host your home</span>
+                                    <span class="membership__option-text">Host an experience</span>
+                                    <span class="membership__option-text">Help</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-bars membership-menu-icon"></i>
+                            <i class="fas fa-user-circle membership-user-icon"></i>
+                        </label>
+                    </div>
+                    <!-- NAV_filter -->
+                    <input type="radio" name="navfilter" id="radio_input1" class="radio_input">
+                    <div class="header__nav__filter">
+                        <div class="filter__search__btn">
+                            <i class="fas fa-search header__search__icon"></i>
+                        </div>
+                        <div class="filter_withinput">
+                            <span class="filter_title">Location</span>
+                            <input type="text" required placeholder="Where are you going?" class="filter_input">
+                        </div>
+                        <div class="filter_withadd">
+                            <span class="filter_title">Date</span>
+                            <span class="filter_subtitle">And when you want to go</span>
+                        </div>
+                    </div>
+                    <input type="radio" name="navfilter" id="radio_input2" class="radio_input2">
+                    <div class="header__nav__filter2">
+                        <div class="filter__search__btn">
+                            <i class="fas fa-search header__search__icon"></i>
+                        </div>
+                        <div class="filter_withinput" style="flex: 1.8;">
+                            <span class="filter_title">Location</span>
+                            <input type="text" required placeholder="Where are you going?" class="filter_input">
+                        </div>
+                        <div class="filter_withadd">
+                            <span class="filter_title">Check in</span>
+                            <span class="filter_subtitle">Add dates</span>
+                        </div>
+                        <div class="filter_withadd">
+                            <span class="filter_title">Check out</span>
+                            <span class="filter_subtitle">Add dates</span>
+                        </div>
+                        <div class="filter_withadd"style="flex: 1.4;">
+                            <span class="filter_title">Guests</span>
+                            <span class="filter_subtitle">Add guests</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__suggestion">
+                    <span class="header__suggestion__text">Not sure where to go? Perfect.</span>
+                    <a href="" class="header__suggestion__btn">I'm flexible</a>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div class="section__container">
+                <h1 class="body__title">Explore nearby</h1>
+                <div class="place-list">
+                    <div class="place-item">
+                        <img src="./assets/img/Hanoi.jpg" alt="Ha Noi" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Hà Nội</p>
+                            <p class="place-item-drivetime">15 minute drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/NinhBinh.jpg" alt="Ninh Binh" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Ninh Bình</p>
+                            <p class="place-item-drivetime">1.5 hour drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/haiphong.jpg" alt="Hai Phong" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Hải Phòng</p>
+                            <p class="place-item-drivetime">1.5 hour drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/DongHoi.jpg" alt="Dong Hoi" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Đồng Hới</p>
+                            <p class="place-item-drivetime">6.5 hour drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/Sontay.jpg" alt="Son Tay" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Sơn Tây</p>
+                            <p class="place-item-drivetime">45 minute drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/haiduong.jpg" alt="Hai Duong" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Hải Dương City</p>
+                            <p class="place-item-drivetime">1 hour drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/Vinh.jpg" alt="Vinh" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Vinh</p>
+                            <p class="place-item-drivetime">4 hour drive</p>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./assets/img/SamSon.jpg" alt="Sam Son" class="place-item-img">
+                        <div class="place-item-text">
+                            <p class="place-item-name">Sầm Sơn</p>
+                            <p class="place-item-drivetime">2.5 hour drive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="body__title">Live anywhere</h1>
+                <div class="lifestyle-list">
+                    <a href=""  class="lifestyle-item">
+                        <img src="./assets/img/Outdoor.jpg" alt="" class="lifestyle-img">
+                        <p class="lifestyle-text">Outdoor getaways</p>
+                    </a>
+                    <a href="" class="lifestyle-item">
+                        <img src="./assets/img/Unique.jpg" alt="" class="lifestyle-img">
+                        <p class="lifestyle-text">Unique stays</p>
+                    </a>
+                    <a href="" class="lifestyle-item">
+                        <img src="./assets/img/EntireHomes.jpg" alt="" class="lifestyle-img">
+                        <p class="lifestyle-text">Entire homes</p>
+                    </a>
+                    <a href="" class="lifestyle-item">
+                        <img src="./assets/img/Petallowed.jpg" alt="" class="lifestyle-img">
+                        <p class="lifestyle-text">Pets allowed</p>
+                    </a>
+                </div>
+                <a href="#" class="hosting_banner">
+                    <div class="hosting_text_wrapper">
+                        <h1 class="hosting_title">Try hosting</h1>
+                        <p class="hosting_desc">Earn extra income and unlock new opportunities by sharing your space.</p>
+                        <span class="hosting_btn">Learn more</span>
+                    </div>
+                </a>
+                <h1 class="body__title">Discover things to do</h1>
+                <div class="discover_list">
+                    <a href="" class="discover_item">
+                        <img src="./assets/img/discover/Anh1.jpg" alt="" class="discover_img">
+                        <div class="discover_text_wrapper">
+                            <p class="discover_text_name">Experiences</p>
+                            <p class="discover_text_desc">Find unforgettable activities near you.</p>
+                        </div>
+                    </a>
+                    <a href="" class="discover_item">
+                        <img src="./assets/img/discover/Anh2.jpg" alt="" class="discover_img">
+                        <div class="discover_text_wrapper">
+                            <p class="discover_text_name">Online Experiences</p>
+                            <p class="discover_text_desc">Live, interactive activities led by Hosts.</p>
+                        </div>
+                    </a>
+                    <a href="" class="discover_item">
+                        <img src="./assets/img/discover/Anh3.jpg" alt="" class="discover_img">
+                        <div class="discover_text_wrapper">
+                            <p class="discover_text_name">Featured collection: Wanderlust</p>
+                            <p class="discover_text_desc">Travel from home with Online Experiences.</p>
+                        </div>
+                    </a>
+                </div>
+                <h1 class="body__title">Inspiration for future getaways</h1>
+                <div class="inspire_title_wrapper">
+                    <label for="inspire1" class="inspire_item inspire_item--active"><p>Destinations for art & culture</p></label>
+                    <label for="inspire2" class="inspire_item"><p>Destinations for outdoor adventure</p></label>
+                    <label for="inspire3" class="inspire_item"><p>Mountain cabins</p></label>
+                    <label for="inspire4" class="inspire_item"><p>Beach destinations</p></label>
+                    <label for="inspire5" class="inspire_item"><p>Popular destinations</p></label>
+                    <label for="inspire6" class="inspire_item"><p>Unique Stays</p></label>
+                </div>
+                <input type="radio" name="inspire" class="inspire1" id="inspire1">
+                <div class="inspire_list list1">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Anna</p>
+                        <p class="inspire_textitem-text">Virginia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Leavenworth</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Seattle</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                </div>
+                <input type="radio" name="inspire" class="inspire2" id="inspire2">
+                <div class="inspire_list list2">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Martin</p>
+                        <p class="inspire_textitem-text">Alabama</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Banff</p>
+                        <p class="inspire_textitem-text">Alberta</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Nerja</p>
+                        <p class="inspire_textitem-text">Andalucía</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Greer</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Anna</p>
+                        <p class="inspire_textitem-text">Virginia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Leavenworth</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Seattle</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                </div>
+                <input type="radio" name="inspire" class="inspire3" id="inspire3">
+                <div class="inspire_list list3">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Mentone</p>
+                        <p class="inspire_textitem-text">Alabama</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sedona</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Helen</p>
+                        <p class="inspire_textitem-text">Georgia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Pine Mountain</p>
+                        <p class="inspire_textitem-text">Georgia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Anna</p>
+                        <p class="inspire_textitem-text">Virginia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Leavenworth</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Seattle</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                </div>
+                <input type="radio" name="inspire" class="inspire4" id="inspire4">
+                <div class="inspire_list list4">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Dauphin Island</p>
+                        <p class="inspire_textitem-text">Alabama</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Fort Morgan</p>
+                        <p class="inspire_textitem-text">Alabama</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Gulf Shores</p>
+                        <p class="inspire_textitem-text">Alabama</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Bruny Island</p>
+                        <p class="inspire_textitem-text">Australia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Anna</p>
+                        <p class="inspire_textitem-text">Virginia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Leavenworth</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Seattle</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                </div>
+                <input type="radio" name="inspire" class="inspire5" id="inspire5">
+                <div class="inspire_list list5">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Canmore</p>
+                        <p class="inspire_textitem-text">Alberta</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Benalmadena</p>
+                        <p class="inspire_textitem-text">Andalusia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Marbella</p>
+                        <p class="inspire_textitem-text">Andalusia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Mijas</p>
+                        <p class="inspire_textitem-text">Andalusia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Phoenix</p>
+                        <p class="inspire_textitem-text">Arizona</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Hot Springs</p>
+                        <p class="inspire_textitem-text">Arkansas</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Los Angeles</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Diego</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">San Francisco</p>
+                        <p class="inspire_textitem-text">California</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Barcelona</p>
+                        <p class="inspire_textitem-text">Catalonia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Prague</p>
+                        <p class="inspire_textitem-text">Czechia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Washington</p>
+                        <p class="inspire_textitem-text">District of Columbia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Keswick</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">London</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Scarborough</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Sherwood Forest</p>
+                        <p class="inspire_textitem-text">England</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lake Anna</p>
+                        <p class="inspire_textitem-text">Virginia</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Leavenworth</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Seattle</p>
+                        <p class="inspire_textitem-text">Washington</p>
+                    </div>
+                </div>
+                <input type="radio" name="inspire" class="inspire6" id="inspire6">
+                <div class="inspire_list list6">
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Cabins</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Treehouses</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Glamping</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Tiny Houses</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Beach Houses</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Campers and RVs</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    <div class="inspire_textitem">
+                        <p class="inspire_textitem-text" style="color: #222;">Lakehouses</p>
+                        <p class="inspire_textitem-text">United States</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="section__container">
+                <div class="footer_infor-list">
+                    <div class="footer_infor-item">
+                        <h3 class="footer_item-title">About</h3>
+                        <a href="" class="footer_item-detail">How Airbnb works</a>
+                        <a href="" class="footer_item-detail">Newsroom</a>
+                        <a href="" class="footer_item-detail">Airbnb 2021</a>
+                        <a href="" class="footer_item-detail">Investors</a>
+                        <a href="" class="footer_item-detail">Airbnb Plus</a>
+                        <a href="" class="footer_item-detail">Airbnb Luxe</a>
+                        <a href="" class="footer_item-detail">HotelTonight</a>
+                        <a href="" class="footer_item-detail">Airbnb for Work</a>
+                        <a href="" class="footer_item-detail">Made possible by Hosts</a>
+                        <a href="" class="footer_item-detail">Careers</a>
+                        <a href="" class="footer_item-detail">Founders' Letter</a>
+                    </div>
+                    <div class="footer_infor-item">
+                        <h3 class="footer_item-title">COMMUNITY</h3>
+                        <a href="" class="footer_item-detail">Diversity & Belonging</a>
+                        <a href="" class="footer_item-detail">Against Discrimination</a>
+                        <a href="" class="footer_item-detail">Accessibility</a>
+                        <a href="" class="footer_item-detail">Airbnb Associates</a>
+                        <a href="" class="footer_item-detail">Host Afghan refugees</a>
+                        <a href="" class="footer_item-detail">Guest Referrals</a>
+                        <a href="" class="footer_item-detail">Gift cards</a>
+                        <a href="" class="footer_item-detail">Airbnb.org</a>
+                    </div>
+                    <div class="footer_infor-item">
+                        <h3 class="footer_item-title">Host</h3>
+                        <a href="" class="footer_item-detail">Host your home</a>
+                        <a href="" class="footer_item-detail">Host an Online Experience</a>
+                        <a href="" class="footer_item-detail">Host an Experience</a>
+                        <a href="" class="footer_item-detail">Responsible hosting</a>
+                        <a href="" class="footer_item-detail">Resource Center</a>
+                        <a href="" class="footer_item-detail">Community Center</a>
+                    </div>
+                    <div class="footer_infor-item">
+                        <h3 class="footer_item-title">Support</h3>
+                        <a href="" class="footer_item-detail">Our COVID-19 Response</a>
+                        <a href="" class="footer_item-detail">Help Center</a>
+                        <a href="" class="footer_item-detail">Cancellation options</a>
+                        <a href="" class="footer_item-detail">Neighborhood Support</a>
+                        <a href="" class="footer_item-detail">Trust & Safety</a>
+                    </div>
+                </div>
+                <div class="footer_final_section">
+                    <div class="footer_leftside">
+                        <p>© 2021 Airbnb, Inc.</p>
+                        <span class="footer_seperate">·</span>
+                        <a href="" class="footer_link">Privacy</a>
+                        <span class="footer_seperate">·</span>
+                        <a href="" class="footer_link">Terms</a>
+                        <span class="footer_seperate">·</span>
+                        <a href="" class="footer_link">Sitemap</a>
+                    </div>
+                    <div class="footer_rightside">
+                        <div class="footer_language">
+                            <i class="fas fa-globe"></i>
+                            <span>English(US)</span>
+                        </div>
+                        <div class="footer_currency">
+                            <p>$ <span>AUD</span></p>
+                        </div>
+                        <div class="footer_social">
+                            <i class="fab footer_social_icon fa-facebook-f"></i>
+                            <i class="fab footer_social_icon fa-twitter"></i>
+                            <i class="fab footer_social_icon fa-instagram-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar" class="whole__navbar">
+        <div class="section__container">
+            <div class="header__nav">
+                <a href="#" class="header__nav__logo">
+                    <img class="header__nav__logo_img" src="./assets/img/pink_logo.jpg" alt="Airbnb Logo">
+                </a>
+                <button class="search__onnav box-shadow">
+                    <span style="font-size: 14px; color: #222;">Start your search</span>
+                    <i class="fas fa-search search__onnav-icon"></i>
+                </button>
+                <div class="header__nav__user">
+                    <a href="#" class="nav__host text-color">Become a host</a>
+                    <div class="nav__language text-color -js-language">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <label for="membership" class="nav__membership box-shadow">
+                        <input type="checkbox" name="" id="membership" class="membership__option-open" style="display: none;" >
+                        <div class="nav__membership__option">
+                            <div class="membership__option-signinout">
+                                <span class="membership__option-text" style="font-weight: 600;" >Sign up</span>
+                                <span class="membership__option-text">Log in</span>
+                            </div>
+                            <div class="membership__option-more">
+                                <span class="membership__option-text">Host your home</span>
+                                <span class="membership__option-text">Host an experience</span>
+                                <span class="membership__option-text">Help</span>
+                            </div>
+                        </div>
+                        <i class="fas fa-bars membership-menu-icon"></i>
+                        <i class="fas fa-user-circle membership-user-icon"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__closeBtn">
+                <i class="fas fa-times modal__closeBtn-icon"></i>
+            </div>
+            <div class="language___wrapper">
+                <div class="language__section">
+                    <label for="languageop" class="label1 language__section--active"><p>Click here to choose Language and region</p></label>
+                    <label class="label2" for="currencyop"><p>Click here to choose Currency</p></label>
+                </div>
+                <input type="radio" name="abc" id="languageop" class="languageop">
+                <div class="ChooseLanguage">
+                    <div class="language__option">
+                        <h1 class="language__title">Suggested language and region</h1>
+                        <div class="langandreg">
+                            <span class="lang">Tiếng Việt</span>
+                            <span class="reg">Việt Nam</span>
+                        </div>
+                    </div>
+                    <div class="language__option">
+                        <h1 class="language__title">Choose a language and region</h1>
+                        <div class="langandreg_wrapper">
+                            <div class="langandreg langandreg--active">
+                                <span class="lang">English</span>
+                                <span class="reg">United States</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Azərbaycan dili</span>
+                                <span class="reg">Azərbaycan</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Bahasa Indonesia</span>
+                                <span class="reg">Indonesia</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Bosanski</span>
+                                <span class="reg">Bosna i Hercegovina</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Català</span>
+                                <span class="reg">Espanya</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Čeština</span>
+                                <span class="reg">Česká republika</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Crnogorski</span>
+                                <span class="reg">Crna Gora</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Dansk</span>
+                                <span class="reg">Danmark</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Deutsch</span>
+                                <span class="reg">Deutschland</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Deutsch</span>
+                                <span class="reg">Österreich</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Deutsch</span>
+                                <span class="reg">Schweiz</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Eesti</span>
+                                <span class="reg">Eesti</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Español</span>
+                                <span class="reg">Argentina</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Español</span>
+                                <span class="reg">Belice</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Français</span>
+                                <span class="reg">Canada</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Gaeilge</span>
+                                <span class="reg">Éire</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hrvatski</span>
+                                <span class="reg">Hrvatska</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">isiXhosa</span>
+                                <span class="reg">eMzantsi Afrika</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Ελληνικά</span>
+                                <span class="reg">Ελλάδα</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Български</span>
+                                <span class="reg">България</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Македонски</span>
+                                <span class="reg">Северна Македонија</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Русский</span>
+                                <span class="reg">Россия</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Українська</span>
+                                <span class="reg">Україна</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">ქართული</span>
+                                <span class="reg">საქართველო</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Հայերեն</span>
+                                <span class="reg">Հայաստան</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">العربية</span>
+                                <span class="reg">العالم</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">हिन्दी</span>
+                                <span class="reg">भारत</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">한국어</span>
+                                <span class="reg">대한민국</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">日本語</span>
+                                <span class="reg">日本</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">简体中文</span>
+                                <span class="reg">美国</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">繁體中文</span>
+                                <span class="reg">美國</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">简体中文</span>
+                                <span class="reg">中国</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">简体中文</span>
+                                <span class="reg">美国</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">简体中文</span>
+                                <span class="reg">美国</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">繁體中文</span>
+                                <span class="reg">美國</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="abc" id="currencyop" class="currencyop">
+                <div class="chooseCurrency">
+                    <div class="language__option">
+                        <h1 class="language__title">Choose a currency</h1>
+                        <div class="langandreg_wrapper">
+                            <div class="langandreg langandreg--active">
+                                <span class="lang">Australian dollar</span>
+                                <span class="reg">AUD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Brazilian real</span>
+                                <span class="reg">BRL - R$</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Bulgarian lev</span>
+                                <span class="reg">BGN - лв.</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Canadian dollar</span>
+                                <span class="reg">CAD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chilean peso</span>
+                                <span class="reg">CLP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chinese yuan</span>
+                                <span class="reg">CNY - ￥</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Colombian peso</span>
+                                <span class="reg">COP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Costa Rican colon</span>
+                                <span class="reg">CRC - ₡</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Croatian kuna</span>
+                                <span class="reg">HRK - kn</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Czech koruna</span>
+                                <span class="reg">CZK - Kč</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Danish krone</span>
+                                <span class="reg">DKK - kr</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Emirati dirham</span>
+                                <span class="reg">AED - ﺩ.ﺇ</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Euro</span>
+                                <span class="reg">EUR - €</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hong Kong dollar</span>
+                                <span class="reg">HKD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hungarian forint</span>
+                                <span class="reg">HUF - Ft</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Brazilian real</span>
+                                <span class="reg">BRL - R$</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Bulgarian lev</span>
+                                <span class="reg">BGN - лв.</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Canadian dollar</span>
+                                <span class="reg">CAD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chilean peso</span>
+                                <span class="reg">CLP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chinese yuan</span>
+                                <span class="reg">CNY - ￥</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Colombian peso</span>
+                                <span class="reg">COP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Costa Rican colon</span>
+                                <span class="reg">CRC - ₡</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Croatian kuna</span>
+                                <span class="reg">HRK - kn</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Czech koruna</span>
+                                <span class="reg">CZK - Kč</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Danish krone</span>
+                                <span class="reg">DKK - kr</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Emirati dirham</span>
+                                <span class="reg">AED - ﺩ.ﺇ</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Euro</span>
+                                <span class="reg">EUR - €</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hong Kong dollar</span>
+                                <span class="reg">HKD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hungarian forint</span>
+                                <span class="reg">HUF - Ft</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Brazilian real</span>
+                                <span class="reg">BRL - R$</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Bulgarian lev</span>
+                                <span class="reg">BGN - лв.</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Canadian dollar</span>
+                                <span class="reg">CAD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chilean peso</span>
+                                <span class="reg">CLP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Chinese yuan</span>
+                                <span class="reg">CNY - ￥</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Colombian peso</span>
+                                <span class="reg">COP - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Costa Rican colon</span>
+                                <span class="reg">CRC - ₡</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Croatian kuna</span>
+                                <span class="reg">HRK - kn</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Czech koruna</span>
+                                <span class="reg">CZK - Kč</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Danish krone</span>
+                                <span class="reg">DKK - kr</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Emirati dirham</span>
+                                <span class="reg">AED - ﺩ.ﺇ</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Euro</span>
+                                <span class="reg">EUR - €</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hong Kong dollar</span>
+                                <span class="reg">HKD - $</span>
+                            </div>
+                            <div class="langandreg">
+                                <span class="lang">Hungarian forint</span>
+                                <span class="reg">HUF - Ft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script>
+        const modal = document.querySelector('.modal');
+        const language = document.querySelector('.nav__language');
+        const closeBtn = document.querySelector('.modal__closeBtn-icon');
+        const modalContainer = document.querySelector('.modal__container');
+        const languageOnNav = document.querySelector('.-js-language');
+        function showLanguage() {
+            modal.classList.add('open');
+        }
+
+        function hideLanguage() {
+            modal.classList.remove('open');
+        }
+        language.addEventListener('click', showLanguage);
+        closeBtn.addEventListener('click', hideLanguage );
+        modal.addEventListener('click',hideLanguage);
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+        languageOnNav.addEventListener('click',showLanguage);
+    </script>
+    <!-- script navbar slide down -->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+        } else {
+                document.getElementById("navbar").style.top = "-80px";
+            }
+        }
+    </script>
+    <!-- Script language and currency -->
+    <script>
+        const languagechoose = document.querySelector('.footer_language');
+        const currencychoose = document.querySelector('.footer_currency');
+        function openlanguage() {
+            modal.classList.add('withlang','open');
+            modal.classList.remove('withcurrency');
+        }
+        function openCurrency() {
+            modal.classList.add('open','withcurrency');
+            modal.classList.remove('withlang');
+        }
+        languagechoose.addEventListener('click',openlanguage)
+        currencychoose.addEventListener('click',openCurrency)
+    </script>
+</body>
+</html>
