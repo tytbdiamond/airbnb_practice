@@ -9,9 +9,103 @@
 }
 /* Tablet from 740px to 1023px */
 @media (min-width : 740px) and (max-width: 1023px) {
-
+    .header__nav__filter,.header__nav__filter2 {
+        top: calc(100% + 80px);
+        width: 669px;
+    }
+    .header__nav__text {
+        white-space: nowrap;
+        position: relative;
+        top: 80px;
+        margin-left: 0;
+    }
+    .nav__text {
+        white-space: nowrap;
+        font-size: 15px;
+        padding: 11px 10px;
+    }
+    .inspire_textitem{
+        width: 200px;
+    }
+    .modal__container,.modal__container2,.modal__container3 {
+        width: 90vw;
+}
 }
 /* Mobile < 740px */
 @media (max-width : 739px) {
-    
+    .header__nav {
+        display: none;
+    }
+    .whole__navbar .header__nav {
+        display: none;
+    }
+    .whole__navbar .header__nav__mobile {
+        display: block;
+    }
+    .header__nav__mobile {
+        display: block;
+    }
+    .lifestyle-list {
+        justify-content: space-evenly;
+
+    }
+    .lifestyle-item {
+        width: 272px;
+        margin-bottom: 16px;
+    }
+    .discover_list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    .discover_item {
+        width: 272px;
+        margin-bottom: 24px;
+    }
+    .footer_infor-list {
+        flex-direction: column;
+    }
+    .footer_infor-item + .footer_infor-item {
+        width: 100%;
+        padding-top: 18px;
+        margin-bottom: 10px;
+        border-top: 1px solid #ccc;
+    }
+    .footer_infor-item:first-child {
+        margin-bottom: 10px;
+    }
+    .footer_infor-item:last-child {
+        margin-bottom: 0;
+    }
+    .inspire_textitem {
+        width: 100px;
+    }
+    .footer_final_section {
+        height: unset;
+        flex-direction: column;
+    }
+    .footer_leftside {
+        padding-bottom: 30px;
+        text-align: center;
+        gap: 10px;
+        order: 2;
+        flex-direction: column;
+    }
+    .footer_rightside {
+        order : 1;
+        margin-bottom: 24px;
+    }
+    .footer_seperate:first-child {
+        display: none;
+    }
+    .place-item {
+        width: 200px;
+    }
+    .modal__container,.modal__container2,.modal__container3 {
+        width: 90vw;
+        height: 70vw;
+    }
+    .language__title {
+        font-size: 16px;
+    }
 }

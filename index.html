@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb : Vacation Rentals, Cabins, Beach Houses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/break_point.css">
@@ -14,6 +17,10 @@
     <div id="container">
         <div id="header">
             <div class="section__container">
+                <button class="header__nav__mobile">
+                    <i class="fas fa-search header__nav__mobile-icon"></i>
+                    <span>Where are you going?</span>
+                </button>
                 <div class="header__nav">
                     <a href="#" class="header__nav__logo">
                         <img class="header__nav__logo_img" src="./assets/img/Logo.jpg" alt="Airbnb Logo">
@@ -1328,12 +1335,14 @@
                 <div class="footer_final_section">
                     <div class="footer_leftside">
                         <p>© 2021 Airbnb, Inc.</p>
-                        <span class="footer_seperate">·</span>
-                        <a href="" class="footer_link">Privacy</a>
-                        <span class="footer_seperate">·</span>
-                        <a href="" class="footer_link">Terms</a>
-                        <span class="footer_seperate">·</span>
-                        <a href="" class="footer_link">Sitemap</a>
+                        <div class="leftside__wrapper">
+                            <span class="footer_seperate">·</span>
+                            <a href="" class="footer_link">Privacy</a>
+                            <span class="footer_seperate">·</span>
+                            <a href="" class="footer_link">Terms</a>
+                            <span class="footer_seperate">·</span>
+                            <a href="" class="footer_link">Sitemap</a>
+                        </div>
                     </div>
                     <div class="footer_rightside">
                         <div class="footer_language">
@@ -1355,6 +1364,10 @@
     </div>
     <div id="navbar" class="whole__navbar">
         <div class="section__container">
+            <button class="header__nav__mobile">
+                <i class="fas fa-search header__nav__mobile-icon"></i>
+                <span>Where are you going?</span>
+            </button>
             <div class="header__nav">
                 <a href="#" class="header__nav__logo">
                     <img class="header__nav__logo_img" src="./assets/img/pink_logo.jpg" alt="Airbnb Logo">
@@ -1738,6 +1751,357 @@
             </div>
         </div>
     </div>
+    <!-- Modal with currency -->
+    <div class="modalwithcurrency">
+        <div class="modal__container3">
+            <div class="modal__closeBtn">
+                <i class="fas fa-times modal__closeBtn-icon3"></i>
+            </div>
+            <div class="language___wrapper">
+                <span><p>Currency</p></span>
+                <div class="language__option">
+                    <h1 class="language__title">Choose a currency</h1>
+                    <div class="langandreg_wrapper">
+                        <div class="langandreg langandreg--active">
+                            <span class="lang">Australian dollar</span>
+                            <span class="reg">AUD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Brazilian real</span>
+                            <span class="reg">BRL - R$</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Bulgarian lev</span>
+                            <span class="reg">BGN - лв.</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Canadian dollar</span>
+                            <span class="reg">CAD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chilean peso</span>
+                            <span class="reg">CLP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chinese yuan</span>
+                            <span class="reg">CNY - ￥</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Colombian peso</span>
+                            <span class="reg">COP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Costa Rican colon</span>
+                            <span class="reg">CRC - ₡</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Croatian kuna</span>
+                            <span class="reg">HRK - kn</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Czech koruna</span>
+                            <span class="reg">CZK - Kč</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Danish krone</span>
+                            <span class="reg">DKK - kr</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Emirati dirham</span>
+                            <span class="reg">AED - ﺩ.ﺇ</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Euro</span>
+                            <span class="reg">EUR - €</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hong Kong dollar</span>
+                            <span class="reg">HKD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hungarian forint</span>
+                            <span class="reg">HUF - Ft</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Brazilian real</span>
+                            <span class="reg">BRL - R$</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Bulgarian lev</span>
+                            <span class="reg">BGN - лв.</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Canadian dollar</span>
+                            <span class="reg">CAD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chilean peso</span>
+                            <span class="reg">CLP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chinese yuan</span>
+                            <span class="reg">CNY - ￥</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Colombian peso</span>
+                            <span class="reg">COP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Costa Rican colon</span>
+                            <span class="reg">CRC - ₡</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Croatian kuna</span>
+                            <span class="reg">HRK - kn</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Czech koruna</span>
+                            <span class="reg">CZK - Kč</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Danish krone</span>
+                            <span class="reg">DKK - kr</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Emirati dirham</span>
+                            <span class="reg">AED - ﺩ.ﺇ</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Euro</span>
+                            <span class="reg">EUR - €</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hong Kong dollar</span>
+                            <span class="reg">HKD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hungarian forint</span>
+                            <span class="reg">HUF - Ft</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Brazilian real</span>
+                            <span class="reg">BRL - R$</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Bulgarian lev</span>
+                            <span class="reg">BGN - лв.</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Canadian dollar</span>
+                            <span class="reg">CAD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chilean peso</span>
+                            <span class="reg">CLP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Chinese yuan</span>
+                            <span class="reg">CNY - ￥</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Colombian peso</span>
+                            <span class="reg">COP - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Costa Rican colon</span>
+                            <span class="reg">CRC - ₡</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Croatian kuna</span>
+                            <span class="reg">HRK - kn</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Czech koruna</span>
+                            <span class="reg">CZK - Kč</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Danish krone</span>
+                            <span class="reg">DKK - kr</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Emirati dirham</span>
+                            <span class="reg">AED - ﺩ.ﺇ</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Euro</span>
+                            <span class="reg">EUR - €</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hong Kong dollar</span>
+                            <span class="reg">HKD - $</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hungarian forint</span>
+                            <span class="reg">HUF - Ft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal with lang -->
+    <div class="modalwithlang">
+        <div class="modal__container2">
+            <div class="modal__closeBtn">
+                <i class="fas fa-times modal__closeBtn-icon2"></i>
+            </div>
+            <div class="language___wrapper">
+                <span class="language__section--active"><p>Language and region</p></span>
+                <div class="language__option">
+                    <h1 class="language__title">Suggested language and region</h1>
+                    <div class="langandreg">
+                        <span class="lang">Tiếng Việt</span>
+                        <span class="reg">Việt Nam</span>
+                    </div>
+                </div>
+                <div class="language__option">
+                    <h1 class="language__title">Choose a language and region</h1>
+                    <div class="langandreg_wrapper">
+                        <div class="langandreg langandreg--active">
+                            <span class="lang">English</span>
+                            <span class="reg">United States</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Azərbaycan dili</span>
+                            <span class="reg">Azərbaycan</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Bahasa Indonesia</span>
+                            <span class="reg">Indonesia</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Bosanski</span>
+                            <span class="reg">Bosna i Hercegovina</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Català</span>
+                            <span class="reg">Espanya</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Čeština</span>
+                            <span class="reg">Česká republika</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Crnogorski</span>
+                            <span class="reg">Crna Gora</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Dansk</span>
+                            <span class="reg">Danmark</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Deutsch</span>
+                            <span class="reg">Deutschland</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Deutsch</span>
+                            <span class="reg">Österreich</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Deutsch</span>
+                            <span class="reg">Schweiz</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Eesti</span>
+                            <span class="reg">Eesti</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Español</span>
+                            <span class="reg">Argentina</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Español</span>
+                            <span class="reg">Belice</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Français</span>
+                            <span class="reg">Canada</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Gaeilge</span>
+                            <span class="reg">Éire</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Hrvatski</span>
+                            <span class="reg">Hrvatska</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">isiXhosa</span>
+                            <span class="reg">eMzantsi Afrika</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Ελληνικά</span>
+                            <span class="reg">Ελλάδα</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Български</span>
+                            <span class="reg">България</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Македонски</span>
+                            <span class="reg">Северна Македонија</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Русский</span>
+                            <span class="reg">Россия</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Українська</span>
+                            <span class="reg">Україна</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">ქართული</span>
+                            <span class="reg">საქართველო</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">Հայերեն</span>
+                            <span class="reg">Հայաստան</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">العربية</span>
+                            <span class="reg">العالم</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">हिन्दी</span>
+                            <span class="reg">भारत</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">한국어</span>
+                            <span class="reg">대한민국</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">日本語</span>
+                            <span class="reg">日本</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">简体中文</span>
+                            <span class="reg">美国</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">繁體中文</span>
+                            <span class="reg">美國</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">简体中文</span>
+                            <span class="reg">中国</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">简体中文</span>
+                            <span class="reg">美国</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">简体中文</span>
+                            <span class="reg">美国</span>
+                        </div>
+                        <div class="langandreg">
+                            <span class="lang">繁體中文</span>
+                            <span class="reg">美國</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- script -->
     <script>
         const modal = document.querySelector('.modal');
@@ -1776,16 +2140,37 @@
     <script>
         const languagechoose = document.querySelector('.footer_language');
         const currencychoose = document.querySelector('.footer_currency');
-        function openlanguage() {
-            modal.classList.add('withlang','open');
-            modal.classList.remove('withcurrency');
+        const modalWithLang = document.querySelector('.modalwithlang');
+        const modalWithCurerrency = document.querySelector('.modalwithcurrency');
+        const modalContainer2 = document.querySelector('.modal__container2');
+        const modalContainer3 = document.querySelector('.modal__container3');
+        const closeBtn2 = document.querySelector('.modal__closeBtn-icon2');
+        const closeBtn3 = document.querySelector('.modal__closeBtn-icon3');
+        function openModalLang () {
+            modalWithLang.classList.add('open');
         }
-        function openCurrency() {
-            modal.classList.add('open','withcurrency');
-            modal.classList.remove('withlang');
+        function closeModalLanng () {
+            modalWithLang.classList.remove('open');
         }
-        languagechoose.addEventListener('click',openlanguage)
-        currencychoose.addEventListener('click',openCurrency)
+        closeBtn2.addEventListener('click', closeModalLanng );
+        languagechoose.addEventListener('click',openModalLang);
+        modalWithLang.addEventListener('click',closeModalLanng);
+        modalContainer2.addEventListener('click',function (event) {
+            event.stopPropagation ()
+        })
+
+        function openModalCurrency () {
+            modalWithCurerrency.classList.add('open');
+        }
+        function closeModalCurrency () {
+            modalWithCurerrency.classList.remove('open');
+        }
+        closeBtn3.addEventListener('click', closeModalCurrency );
+        currencychoose.addEventListener('click',openModalCurrency);
+        modalWithCurerrency.addEventListener('click',closeModalCurrency);
+        modalContainer3.addEventListener('click',function (event) {
+            event.stopPropagation ()
+        })
     </script>
 </body>
 </html>
